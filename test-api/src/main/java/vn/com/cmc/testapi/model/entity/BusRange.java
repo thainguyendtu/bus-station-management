@@ -22,7 +22,7 @@ public class BusRange {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @OneToMany(mappedBy = "garage")
+    @OneToMany(mappedBy = "busRange")
     private List<Bus> busList = new ArrayList<>();
 
     @Column(name = "mo_ta_loai_xe", nullable = false, length = 1000)

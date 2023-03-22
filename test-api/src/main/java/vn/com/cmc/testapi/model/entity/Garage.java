@@ -22,7 +22,7 @@ public class Garage {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @OneToMany(mappedBy = "busRange")
+    @OneToMany(mappedBy = "garage")
     private List<Bus> busList = new ArrayList<>();
 
     @Column(name = "ten_nha_xe", nullable = false, length = 50, unique = true)
